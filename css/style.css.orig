@@ -1,0 +1,314 @@
+/******************************************************/
+/***Main Things***/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+#miniCharts p {
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+section {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /*flex-flow: row;*/
+  color: #f3f3f3;
+  position: relative;
+}
+
+#page-1 {
+  background-color: #2d2d2d;
+}
+
+#page-2 {
+  background-color: #232323;
+}
+
+#page-3 {
+  background-color: #191919;
+}
+
+.anchors {
+  display: none;
+}
+
+nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a span {
+  background: #fff;
+}
+
+nav li {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 16px;
+  position: relative;
+}
+
+nav span:after {
+  background: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  content: "";
+  display: block;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+nav li .active span {
+  background: black;
+  position: absolute;
+}
+
+nav li .active span:after {
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul li a.active span,
+nav ul li:hover a.active span {
+  height: 12px;
+  width: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%;
+}
+
+nav ul li a span {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 4px;
+  width: 4px;
+  border: 0;
+  background: black;
+  left: 50%;
+  top: 50%;
+  margin: -2px 0 0 -2px;
+  transition: all 0.1s ease-in-out;
+}
+
+nav ul li:hover a span {
+  width: 10px;
+  height: 10px;
+  margin: -5px 0px 0px -5px;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+  
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 200;
+  font-size: 190%;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h3 {
+  font-size: 150%;
+  text-align: left;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+}
+
+.svg {
+  display: block;
+  margin: auto;
+}
+
+.legend-p1 {
+  margin-left: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#subtitle-page-1 {
+  width: 120px;
+  margin: auto;
+  display: block;
+}
+
+.line {
+  fill: none;
+  stroke: green;
+  stroke-width: 5px;
+}
+
+path.line {
+  fill: none;
+  stroke: red;
+  stroke-width: 3px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #848484;
+  shape-rendering: crispEdges;
+}
+
+.axis {
+  fill: #848484;
+
+}
+
+#miniCharts {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.miniChartDiv {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.miniChartDiv10 {
+  /* Center Last Row */
+  margin-left: 180px;
+}
+
+#menu-page-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#container-menu-2 {
+  margin-right: 150px;
+}
+
+#dropdown-major {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  height: 40px;
+  padding-left: 10px;
+  background: #232323;
+  color: #f3f3f3;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 1px solid #848484;
+}
+
+/*Style radio button Credits: https://tipue.com/blog/radio-checkbox/*/
+.form-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  background-color: #848484;
+  color: #666;
+  top: 5px;
+  height: 20px;
+  width: 20px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 7px;
+  outline: none;
+}
+
+.form-radio:checked::before {
+  position: absolute;
+  font: 13px/1 'Open Sans', sans-serif;
+  left: 7px;
+  top: 3px;
+  content: '\02143';
+  transform: rotate(40deg);
+}
+
+.form-radio:hover {
+  background-color: #f7f7f7;
+}
+
+.form-radio:checked {
+  background-color: #f1f1f1;
+}
+
+label {
+  font: 15px/1.7 'Open Sans', sans-serif;
+  color: #848484;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+.axisLabel {
+  font: 15px/1.7 'Open Sans', sans-serif;
+  fill: #848484;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+label:hover {
+  color: #f3f3f3;
+}
+
+.tooltipInfo {
+  margin-left: 20px;
+  width: 250px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>IVIS-Pro</title>
+
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- <div id="page-1"></!-->
+
+  <!-- Navigation -->
+  <div class="anchors">
+    <ul>
+      <li><a href="#page-1" class="active">Page 1</a></li>
+      <li><a href="#page-2">Page 2</a></li>
+      <li><a href="#page-3">Page 3</a></li>
+      <li><a href="#page-4">Page 4</a></li>
+    </ul>
+  </div>
+
+  <!--MAIN-->
+  <main id="container">
+    <section id="page-1" data-anchor="page-1">
+      <h1>Verteilung der Geschlechter über die Fachbereiche an schweizer Fachhochschulen</h1>
+      <div id="subtitle-page-1">
+        <p style="text-align: center; margin-bottom: 10px; margin-top: 0px">1997-2019</p>
+        <svg class="legend-p1" width="20" height="10">
+          <rect id="p1-legend-m" width="10" height="10" style="fill: none;"></rect>
+        </svg>
+        Männer
+        <svg class="legend-p1" width="20" height="10">
+          <rect id="p1-legend-w" width="10" height="10" style="fill: none;"></rect>
+        </svg>
+        Frauen
+      </div>
+      <div id="miniCharts"></div>
+    </section>
+    <section id="page-2" data-anchor="page-2">
+      <div id="menu-page-2">
+        <div id="container-menu-1"><h3>Fachbereich</h3></div>
+        <div id="container-menu-2">
+          <h3>Geschlecht</h3>
+          <form id="gender">
+            <input type='radio' name="gender" value="Mann" checked>Mann</input>
+            <input type='radio' name="gender" value="Frau">Frau</input>
+            <input type='radio' name="gender" value="both">Zusammen</input>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="page-3" data-anchor="page-3">
+    </section>
+    <section id="page-4" data-anchor="page-4">
+
+    </section>
+  </main>
+
+
+
+
+  <!-- Footer -->
+  <footer></footer>
+
+
+  <!-- D3 Libary-->
+  <!-- <script src='lib/d3/d3.js'></script> -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src='lib/lodash.js'></script>
+  <!--Docs: https://lodash.com/docs/4.17.15-->
+
+  <script src="src/pageable.js"></script>
+  <!-- Custom JavaScript for this theme -->
+  <script src="src/custom.js"></script>
+  <script src="src/linechart.js"></script>
+  <script src="src/streamchart.js"></script>
+  <!--<script src="src/barchart.js"></script>-->
+
+
+</body>
+
+</html>

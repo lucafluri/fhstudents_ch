@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>IVIS-Pro</title>
+
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- <div id="page-1"></!-->
+
+  <!-- Navigation -->
+  <div class="anchors">
+    <ul>
+      <li><a href="#page-1" class="active">Page 1</a></li>
+      <li><a href="#page-2">Page 2</a></li>
+      <li><a href="#page-3">Page 3</a></li>
+      <li><a href="#page-4">Page 4</a></li>
+    </ul>
+  </div>
+
+  <!--MAIN-->
+  <main id="container">
+    <section id="page-1" data-anchor="page-1">
+      <h1>Verteilung der Geschlechter über die Fachbereiche an schweizer Fachhochschulen</h1>
+      <div id="subtitle-page-1">
+        <p style="text-align: center; margin-bottom: 10px; margin-top: 0px">1997-2019</p>
+        <svg class="legend-p1" width="20" height="10">
+          <rect id="p1-legend-m" width="10" height="10" style="fill: none;"></rect>
+        </svg>
+        Männer
+        <svg class="legend-p1" width="20" height="10">
+          <rect id="p1-legend-w" width="10" height="10" style="fill: none;"></rect>
+        </svg>
+        Frauen
+      </div>
+      <div id="miniCharts"></div>
+    </section>
+    <section id="page-2" data-anchor="page-2">
+      <h2>Studentenanzahl im Verlauf der Zeit</h2>
+      <div id="menu-page-2">
+        <div id="container-menu-1">
+          <h3>Fachbereich</h3>
+          <div class="select-style"></div>
+        </div>
+        <div id="container-menu-2">
+          <h3>Geschlecht</h3>
+          <form id="gender">
+            <input type='radio' id="radio-men" class="form-radio" name="gender" value="Mann" checked><label
+              for="radio-men">Männer</label>
+            <input type='radio' id="radio-women" class="form-radio" name="gender" value="Frau"><label
+              for="radio-women">Frauen</label>
+            <input type='radio' id="radio-both" class="form-radio" name="gender" value="both"><label
+              for="radio-both">Zusammen</label>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="page-3" data-anchor="page-3">
+      <div id="stats">
+        <div class="stats-item" id="stat1">
+          Anzahl Studenten and schweizer FH's von 1997 - 2019
+        </div>
+        <div class="stats-item" id="stat2">
+          Totale Anzahl Männer vs. Frauen
+        </div>
+        <div class="stats-item" id="stat3">Verteilung der Studenten auf die Fachbereiche</div>
+        <div class="stats-item" id="stat4">
+          <div id="credits">
+
+            Made by </br><a href="mailto:luca.fluri@students.fhnw.ch">Luca Fluri</a> (<a
+              href="https://github.com/lucafluri">Github</a>)</br>
+              <a href="mailto:koray.oezkaynak@students.fhnw.ch">Koray
+              Oezkaynak</a> (<a href="https://github.com/REDOON">Github</a>)
+            </br></br>
+            ivis 6iCbb FS20
+    
+            <div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+
+
+
+  <!-- Footer -->
+  <footer></footer>
+
+
+  <!-- D3 Libary-->
+  <!-- <script src='lib/d3/d3.js'></script> -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src='lib/lodash.js'></script>
+  <!--Docs: https://lodash.com/docs/4.17.15-->
+
+  <script src="src/pageable.js"></script>
+  <!-- Custom JavaScript for this theme -->
+  <script src="src/custom.js"></script>
+  <script src="src/charts.js"></script>
+  <script src="src/streamchart.js"></script>
+  <script src="src/stats.js"></script>
+
+
+
+</body>
+
+</html>
