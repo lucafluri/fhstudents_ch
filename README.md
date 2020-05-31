@@ -4,7 +4,7 @@ Student 1: [Koray Oezkaynak](https://github.com/REDOON)
 Student 2: [Luca Fluri](https://github.com/lucafluri)
 
 **Short description:**
-Wir visualisieren den Unterschied der Geschlechter auf die Fachbereiche der schweizer Fachhochschulen. Der Nutzer hat zudem eine interaktive Grafik um die Verteilungen der Studenten über die letzten 22 Jahre zu explorieren.
+Wir visualisieren den Unterschied der Geschlechter auf die Fachbereiche der schweizer Fachhochschulen. Die Nutzer/Nutzerinnen haben zudem eine interaktive Grafik um die Verteilungen der Studierenden über die letzten 22 Jahre zu explorieren.
 
 ## Technical information*
 **Main file path**: ./index.html
@@ -27,4 +27,3 @@ Change to yes when your application is ready.
 Ivis Portal:  (http://86.119.38.44) (via VPN)
 
 
-# ivispro

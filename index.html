@@ -9,10 +9,10 @@
   <meta name="author" content="">
 
 
-  <title>IVIS-Pro</title>
+  <title>Studierende an schweizer FH's</title>
 
   <!-- Custom styles for this template -->
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Open+Sans&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -33,22 +33,25 @@
   <!--MAIN-->
   <main id="container">
     <section id="page-1" data-anchor="page-1">
-      <h1>Verteilung der Geschlechter über die Fachbereiche an schweizer Fachhochschulen</h1>
+      <div class="title-wrapper-centered">
+        <h1><span style="font-size:90%; padding-right:5px;">Verteilung der </span>Geschlechter<span style="font-size:90%; padding-left:5px;"> über die </span><br>Fachbereiche <span style="font-size:90%; padding-right:5px;padding-left:5px;">an schweizer </span>Fachhochschulen</h1>
+      </div>
       <div id="subtitle-page-1">
-        <p style="text-align: center; margin-bottom: 10px; margin-top: 0px">1997-2019</p>
-        <svg class="legend-p1" width="20" height="10">
-          <rect id="p1-legend-m" width="10" height="10" style="fill: none;"></rect>
-        </svg>
-        Männer
-        <svg class="legend-p1" width="20" height="10">
-          <rect id="p1-legend-w" width="10" height="10" style="fill: none;"></rect>
-        </svg>
-        Frauen
+        <div>
+            <div><img src="data/icon_mann.png" alt="Mann Orange"></div>
+            <div><h5>1997 - 2019</h5></div>
+            <div><img src="data/icon_frau.png" alt="Frau Violett" style="float:right"></div>
+        </div>
+        
+        
+        
       </div>
       <div id="miniCharts"></div>
     </section>
     <section id="page-2" data-anchor="page-2">
-      <h2>Studentenanzahl im Verlauf der Zeit</h2>
+      <div class="title-wrapper-centered">
+      <h2>Anzahl neue Studierende im Verlauf der Zeit</h2>
+      </div>
       <div id="menu-page-2">
         <div id="container-menu-1">
           <h3>Fachbereich</h3>
@@ -70,21 +73,31 @@
     <section id="page-3" data-anchor="page-3">
       <div id="stats">
         <div class="stats-item" id="stat1">
-          Anzahl Studenten and schweizer FH's von 1997 - 2019
+          <h4>Anzahl Studierende an schweizer<br>FH's von 1997 - 2019</h4>
+          <div>
+            <p class="stat1">Total<br><span id="stat1-text"></span></p>
+          </div>
         </div>
         <div class="stats-item" id="stat2">
-          Totale Anzahl Männer vs. Frauen
+          <h4 style="text-align: center;text-indent: -2.5em;">Totale Anzahl <br> Männer vs. Frauen</h4>
         </div>
-        <div class="stats-item" id="stat3">Verteilung der Studenten auf die Fachbereiche</div>
+        <div class="stats-item" id="stat3">
+          <h4>Verteilung der Studierenden auf die Fachbereiche</h4>
+          <div id="placeholder_for_chart"></div>
+          <div id="placeholder_for_slider"></div>
+        </div>
         <div class="stats-item" id="stat4">
           <div id="credits">
 
-            Made by </br><a href="mailto:luca.fluri@students.fhnw.ch">Luca Fluri</a> (<a
-              href="https://github.com/lucafluri">Github</a>)</br>
-              <a href="mailto:koray.oezkaynak@students.fhnw.ch">Koray
-              Oezkaynak</a> (<a href="https://github.com/REDOON">Github</a>)
+            <h4 style="text-align: center; margin-bottom:15px;">Made by</h4>
+            <a href="mailto:luca.fluri@students.fhnw.ch">Luca Fluri</a> 
+            (<a href="https://github.com/lucafluri">Github</a>)</br>
+
+            <a href="mailto:koray.oezkaynak@students.fhnw.ch">Koray Oezkaynak</a> 
+            (<a href="https://github.com/REDOON">Github</a>)
+
             </br></br>
-            ivis 6iCbb FS20
+            <span style="font-size:60%; font-weight: 700;">ivis 6iCbb FS20</span>
     
             <div>
         </div>

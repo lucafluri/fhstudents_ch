@@ -1,4 +1,5 @@
-const COLOR_PALETTE = ["#8c4b80", "#3d4d83", "#615190", "#865196", "#ab5094", "#cc508b", "#e7537b", "#fb5f67", "#ff724e", "#ff8b32", "#ffa600"].reverse();
+// const COLOR_PALETTE = ["#8c4b80", "#3d4d83", "#615190", "#865196", "#ab5094", "#cc508b", "#e7537b", "#fb5f67", "#ff724e", "#ff8b32", "#ffa600"].reverse();
+const COLOR_PALETTE = ["#07334F", "#0A4775", "#074B89", "#0C55B4", "#116FBF", "#1D96C2", "#52C0D9", "#72E5F2"].reverse();
 
 
 
@@ -48,8 +49,8 @@ function updateGraph(data, COLOR) {
         tooltipInfo.text(""); //clear tooltip
         tooltipInfo.append("div").html(`<strong>Jahr:</strong> ${year}`).attr("class", "tooltipInfo");
         tooltipInfo.append("div").html(`<strong>FH:</strong> ${grp}`).attr("class", "tooltipInfo");
-        tooltipInfo.append("div").html(`<strong>Studenten an FH: </strong> ${students}`).attr("class", "tooltipInfo");
-        tooltipInfo.append("div").html(`<strong>Studenten Total: </strong> ${total}`).attr("class", "tooltipInfo");
+        tooltipInfo.append("div").html(`<strong>Studierende an FH: </strong> ${students}`).attr("class", "tooltipInfo");
+        tooltipInfo.append("div").html(`<strong>Studierende Total: </strong> ${total}`).attr("class", "tooltipInfo");
 
         //calculate position of mouse
         var mousePosX = chartGroup.node().getBoundingClientRect().left + mousex + 80;
@@ -125,11 +126,18 @@ function updateGraph(data, COLOR) {
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
 
+
+    
     chartGroup.select('.y')
+        .transition()
+        .duration(1500)
         .call(yAxis)
+        
+    chartGroup.select('.y')
         .selectAll("text")
         .style("fill", "#848484")
         .style("font-size", "11pt")
+  
 
     chartGroup.select('.x')
         .attr("transform", "translate(0," + height + ")")
@@ -150,6 +158,10 @@ function updateGraph(data, COLOR) {
         })
     d3.selectAll("line")
         .style("stroke", "#848484")
+
+    chartGroup.select(".y axis").transition()
+        .duration(1000)
+  
 }
 
 
@@ -294,7 +306,7 @@ chartGroup.append("text")
     .attr("dy", "1em")
     .style("text-anchor", "middle")
     .attr("class", "axisLabel")
-    .text("Neue Studenten");
+    .text("Neue Studierende");
 
 
 

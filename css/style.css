@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  /*text-align: center;*/
 }
 
 #miniCharts p {
@@ -147,25 +148,37 @@ nav ul li:hover a span {
 
 }
 
-
-h1,
-h2,
-h3 {
+h1,h2,h3, h4, h5{
   font-family: 'Manrope', sans-serif;
-  font-weight: 200;
-  font-size: 190%;
   color: white;
-  text-align: center;
-  padding-top: 50px;
+  line-height: 1.4em;
+  padding-top: 10px;
+  text-align: left;
 }
-
+h1{
+  font-size: 220%;
+  text-indent:-1em;
+  margin-left:70px;
+}
+h2{
+  font-size: 200%;
+}
 h3 {
   font-size: 150%;
-  text-align: left;
-  padding-bottom: 25px;
-  margin-bottom: 0;
+  padding-top:10px;
 }
-
+h4{
+  font-size:100%;
+  margin:10px auto 0px auto;
+}
+h5{
+  font-size:130%;
+  margin:0px;
+}
+.title-wrapper-centered{
+  width:1000px;
+  margin:0px auto 0px auto; 
+}
 .svg {
   display: block;
   margin: auto;
@@ -178,9 +191,16 @@ h3 {
 }
 
 #subtitle-page-1 {
-  width: 120px;
+  width: 250px;
   margin: auto;
   display: block;
+
+}
+#subtitle-page-1 > div{
+  display:flex;
+}
+#subtitle-page-1 > div div{
+  padding-left:20px;
 }
 
 .line {
@@ -234,7 +254,7 @@ path.line {
   display: flex;
   justify-content: space-between;
   width: 1000px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 #container-menu-2 {
@@ -324,27 +344,54 @@ label:hover {
   width: 1240px;
   height: 800px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
 
 }
 
 .stats-item {
   height: 400px;
-  width: 600px;
-  background-color: #2d2d2d00;
+  width: 560px;
+  background-color: #1a1a1a;
   margin: 10px;
   font-size: 30px;
   text-align: center;
   justify-content: center;
   color: white;
-
+  -webkit-box-shadow: 2px 0px 8px 0px rgba(20, 20, 20, 0.75);
+  -moz-box-shadow: 2px 0px 8px 0px rgba(20, 20, 20, 0.75);
+  box-shadow: 2px 0px 8px 0px rgba(20, 20, 20, 0.75);
+  border-radius: 15px;
 }
-
-
+#stat1, #stat3{
+  padding-left:40px;
+}
+#stat2, #stat4{
+  padding-right:40px;
+}
+#stat1-wrapper{
+  width: 75%;
+  margin-top:15px;
+  margin-left:40px;
+}
+#men-bar{
+  background-color: #FAA601;
+  height:40px;
+  position:absolute;
+  border-radius:15px 0px 0px 15px;
+}
+#women-bar{
+  background-color: #ab5093;
+  height:40px;
+  border-radius: 15px;
+  position:absolute;
+}
 #credits {
   color: white;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20%;
+}
+#credits a{
+  font-size:80%;
 }
 
 .innerStat {
@@ -357,10 +404,70 @@ a {
   color: white;
 }
 
-.stat1{
-  margin: 0;
+p.stat1{
+  margin-left:-50px;
+  font-size:100%;
 }
 
 #stat1-spacer {
-  height: 50px;
+  height: 10px;
+}
+#stat1-text{
+  font-size:90%;
+}
+.stat1-text{
+  font-size:80%;
+  margin-top:5px;
+  text-shadow: 1px 1px 5px rgb(52,52,52);
+}
+input[type=range] {
+  height: 34px;
+  -webkit-appearance: none;
+  margin-top:-10px;
+  width: 60%;
+  background: None;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track{
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000;
+  background: #2D2D2D;
+  border-radius: 1px;
+  border: 0px solid #010101;
+}
+/*, selector doesnt work..*/
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 11px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000;
+  background: #2D2D2D;
+  border-radius: 1px;
+  border: 0px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb{
+  box-shadow: 1px 1px 5px #191919;
+  border: 1px solid #191919;
+  height: 26px;
+  width: 26px;
+  border-radius: 50px;
+  background: #F3F3F3;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+input[type=range]::-moz-range-thumb{
+  box-shadow: 1px 1px 5px #191919;
+  border: 1px solid #191919;
+  height: 26px;
+  width: 26px;
+  border-radius: 50px;
+  background: #F3F3F3;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
 }
