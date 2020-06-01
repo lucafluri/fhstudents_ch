@@ -6,6 +6,10 @@ Student 2: [Luca Fluri](https://github.com/lucafluri)
 **Short description:**
 Wir visualisieren den Unterschied der Geschlechter auf die Fachbereiche der schweizer Fachhochschulen. Die Nutzer/Nutzerinnen haben zudem eine interaktive Grafik um die Verteilungen der Studierenden über die letzten 22 Jahre zu explorieren.
 
+## Zustäzliche Informationen
+Der Viewport benötigt eine Mindestgrösse von 1300 x 906 Pixel.
+Das scrollen auf einem Touchpad kann "Seiten" überspringen. Wir empfehlen beim Auftreten des Problems, die Nutzung der Pfeiltasten oder dem Touchscreen.
+
 ## Technical information*
 **Main file path**: ./index.html
 
@@ -21,7 +25,7 @@ Change to yes when your application is ready.
 |Version|Status|
 |--|--|
 |First prototype ready | yes |
-|Final version ready  | no |
+|Final version ready  | yes |
 
 
 
