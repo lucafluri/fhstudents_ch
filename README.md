@@ -13,6 +13,8 @@ Wir visualisieren den Unterschied der Geschlechter auf die Fachbereiche der schw
 
 **Supported Browsers**: Chrome, Firefox
 
+**Sources**: [Opendata.swiss](https://opendata.swiss/en/dataset/studierende-an-den-fachhochschulen-und-padagogischen-hochschulen-nach-jahr-fachrichtung-geschle2)
+
 ## Status
 Change to yes when your application is ready.
 
@@ -24,6 +26,6 @@ Change to yes when your application is ready.
 
 
 ## Setup
-Ivis Portal:  (http://86.119.38.44) (via VPN)
+Ivis Portal:  (http://86.119.38.44) (FHNW intern via VPN)
 
 

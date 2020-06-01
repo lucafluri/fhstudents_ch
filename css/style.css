@@ -335,6 +335,7 @@ label:hover {
 .tooltipInfo {
   margin-left: 20px;
   width: 250px;
+  pointer-events:none;
 }
 
 #stats {

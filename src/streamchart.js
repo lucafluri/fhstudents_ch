@@ -338,5 +338,6 @@ var tooltipInfo = d3.select("#svg-streampath")
     .style("position", "relative")
     .style("z-index", "19")
     .style("width", "100px")
+	.style("pointer-events", "none")
     //.style("height", height + "px")
     .style("top", -1000 + "px");
