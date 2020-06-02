@@ -3,6 +3,8 @@
 Student 1: [Koray Oezkaynak](https://github.com/REDOON)
 Student 2: [Luca Fluri](https://github.com/lucafluri)
 
+**Published on:** [https://fhstudents.lucafluri.ch](https://fhstudents.lucafluri.ch)
+
 **Short description:**
 Wir visualisieren den Unterschied der Geschlechter auf die Fachbereiche der schweizer Fachhochschulen. Die Nutzer/Nutzerinnen haben zudem eine interaktive Grafik um die Verteilungen der Studierenden über die letzten 22 Jahre zu explorieren.
 
